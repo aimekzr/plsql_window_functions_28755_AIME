@@ -30,7 +30,7 @@ New Database with PL/SQL Projects
 - A goal to calculate the average sales over the last three months to smooth short-term changes.
 
 ## Step 3: Database Schema Design
-### three (3) related tables with primary and foreign keys.
+### - Three (3) related tables with primary and foreign keys.
 1. CREATE DATABASE onlinedbms;
 2. CREATE TABLE customer (
     customerID SERIAL PRIMARY KEY,
