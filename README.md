@@ -52,6 +52,7 @@ New Database with PL/SQL Projects
     FOREIGN KEY (customerID) REFERENCES customers(customerID),
     FOREIGN KEY (productID) REFERENCES products(productID)
 );
-
+An ER diagram
+![Image](https://github.com/user-attachments/assets/f0c42122-05c8-45cb-90ec-83e0de47e1f3)
 
 
