@@ -69,6 +69,7 @@ New Database with PL/SQL Projects
 
 ### An ER diagram
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/e410b088-b366-44c9-bdf5-267622452891" />
+
 ## SQL Screenshots with Explanations
  -- inner_join.png
  -- left_join.png
