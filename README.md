@@ -71,12 +71,12 @@ New Database with PL/SQL Projects
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/e410b088-b366-44c9-bdf5-267622452891" />
 
 ## SQL Screenshots with Explanations
- -- inner_join.png
- -- left_join.png
- -- right_join.png
- -- full_join.png
- -- self_join.png
- -- rank.png
- -- running_total.png
- -- lag.png
- -- ntile.png
+ - inner_join.png
+ - left_join.png
+ - right_join.png
+ - full_join.png
+ - self_join.png
+ - rank.png
+ - running_total.png
+ - lag.png
+ - ntile.png
