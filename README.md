@@ -31,18 +31,18 @@ New Database with PL/SQL Projects
 
 ## Step 3: Database Schema Design
 ### three (3) related tables with primary and foreign keys.
-- CREATE DATABASE onlinedbms;
-- CREATE TABLE customer (
+1. CREATE DATABASE onlinedbms;
+2. CREATE TABLE customer (
     customerID SERIAL PRIMARY KEY,
     customerName VARCHAR(50) NOT NULL,
     region VARCHAR(50) NOT NULL
 );
-- CREATE TABLE products (
+3. CREATE TABLE products (
     productID SERIAL PRIMARY KEY,
     productName VARCHAR(50) NOT NULL,
     price DECIMAL(10,2) NOT NULL CHECK (price>0)
 );
-- CREATE TABLE sales (
+4. CREATE TABLE sales (
     salesID SERIAL PRIMARY KEY,
     customerID INT,
     product_id INT,
