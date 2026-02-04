@@ -28,3 +28,30 @@ New Database with PL/SQL Projects
 
 5. Three-month moving averages → AVG() OVER()
 - A goal to calculate the average sales over the last three months to smooth short-term changes.
+
+## Step 3: Database Schema Design
+### three (3) related tables with primary and foreign keys.
+- CREATE DATABASE onlinedbms;
+- CREATE TABLE customer (
+    customerID SERIAL PRIMARY KEY,
+    customerName VARCHAR(50) NOT NULL,
+    region VARCHAR(50) NOT NULL
+);
+- CREATE TABLE products (
+    productID SERIAL PRIMARY KEY,
+    productName VARCHAR(50) NOT NULL,
+    price DECIMAL(10,2) NOT NULL CHECK (price>0)
+);
+- CREATE TABLE sales (
+    salesID SERIAL PRIMARY KEY,
+    customerID INT,
+    product_id INT,
+    salesDate DATE,
+    quantity INT,
+    totalAmount NUMERIC(10,2) NOT NULL CHECK(totalAmount>0),
+    FOREIGN KEY (customerID) REFERENCES customers(customerID),
+    FOREIGN KEY (productID) REFERENCES products(productID)
+);
+
+
+
