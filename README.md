@@ -70,8 +70,8 @@ New Database with PL/SQL Projects
 ### An ER diagram
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/e410b088-b366-44c9-bdf5-267622452891" />
 
-## SQL Screenshots with Explanations
- 1. SQL JOINs Implementation
+## Step 4 & 5: SQL Screenshots with Explanations
+ 1. Part A. SQL JOINs Implementation
  - inner_join.png<br>* Shows only matching rows from both tables.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
  - left_join.png<br>* Shows all rows from the left table and matching rows from the right.<br>
@@ -82,7 +82,7 @@ New Database with PL/SQL Projects
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/f3bba839-9a72-44d0-afcf-7a0c5ccb8b3a" /><br>
  - self_join.png<br>* Shows a table joining with itself.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/382fd78f-57c2-4482-9d26-2f7fa660d058" /><br>
- 2. Window Functions Implementation<br>
+ 2. Part B. Window Functions Implementation<br>
  - rank.png<br>Shows ranking of rows in a table.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" /><br>
  - running_total.png<br>* Shows cumulative total of values.<br>
