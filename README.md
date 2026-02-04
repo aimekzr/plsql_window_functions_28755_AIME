@@ -54,6 +54,6 @@ New Database with PL/SQL Projects
 );
 
 ### An ER diagram
-
+<img width="906" height="601" alt="Image" src="https://github.com/user-attachments/assets/b4136e88-4d49-4c42-afd6-03ae79c421cc" />
 
 
