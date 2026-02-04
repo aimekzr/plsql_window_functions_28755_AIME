@@ -73,21 +73,21 @@ New Database with PL/SQL Projects
 ## SQL Screenshots with Explanations
  1. SQL JOINs Implementation
  - inner_join.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" />
  - left_join.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/a3b07cac-e8ad-4cd9-be97-7f48f0646377" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/a3b07cac-e8ad-4cd9-be97-7f48f0646377" />
  - right_join.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/32a4a4e5-e904-4ca3-a237-ffaa4e7a3977" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/32a4a4e5-e904-4ca3-a237-ffaa4e7a3977" />
  - full_join.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/f3bba839-9a72-44d0-afcf-7a0c5ccb8b3a" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/f3bba839-9a72-44d0-afcf-7a0c5ccb8b3a" />
  - self_join.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/382fd78f-57c2-4482-9d26-2f7fa660d058" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/382fd78f-57c2-4482-9d26-2f7fa660d058" />
  2. Window Functions Implementation
  - rank.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" />
  - running_total.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/16f3b2f6-ccc6-4afa-a3ef-70e797099f14" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/16f3b2f6-ccc6-4afa-a3ef-70e797099f14" />
  - lag.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/81e0576e-8003-4174-b94c-fe52efcf309c" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/81e0576e-8003-4174-b94c-fe52efcf309c" />
  - ntile.png
-   <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" />
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" />
