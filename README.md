@@ -72,22 +72,22 @@ New Database with PL/SQL Projects
 
 ## SQL Screenshots with Explanations
  1. SQL JOINs Implementation
- - inner_join.png<br>Shows only matching rows from both tables.
+ - inner_join.png<br>Shows only matching rows from both tables.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
- - left_join.png<br>Shows all rows from the left table and matching rows from the right.
+ - left_join.png<br>Shows all rows from the left table and matching rows from the right.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/a3b07cac-e8ad-4cd9-be97-7f48f0646377" /><br>
- - right_join.png<br>Shows all rows from the right table and matching rows from the left.
+ - right_join.png<br>Shows all rows from the right table and matching rows from the left.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/32a4a4e5-e904-4ca3-a237-ffaa4e7a3977" /><br>
- - full_join.png<br>Shows all rows from both tables, matching where possible.
+ - full_join.png<br>Shows all rows from both tables, matching where possible.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/f3bba839-9a72-44d0-afcf-7a0c5ccb8b3a" /><br>
- - self_join.png<br>Shows a table joining with itself.
+ - self_join.png<br>Shows a table joining with itself.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/382fd78f-57c2-4482-9d26-2f7fa660d058" /><br>
  2. Window Functions Implementation<br>
- - rank.png<br>Shows ranking of rows in a table.
+ - rank.png<br>Shows ranking of rows in a table.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" /><br>
- - running_total.png<br>Shows cumulative total of values.
+ - running_total.png<br>Shows cumulative total of values.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/16f3b2f6-ccc6-4afa-a3ef-70e797099f14" /><br>
- - lag.png<br>Shows previous row value for comparison.
+ - lag.png<br>Shows previous row value for comparison.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/81e0576e-8003-4174-b94c-fe52efcf309c" /><br>
- - ntile.png<br>Divides rows into equal groups and numbers them.
+ - ntile.png<br>Divides rows into equal groups and numbers them.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
