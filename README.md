@@ -1,5 +1,5 @@
 #  About Me 🪄:
-My name is Kwizera Aime<br>This is my Database with pl/sql Assignment <br>Welcome everybody to collaborate!🕸️
+My name is Kwizera Aime<br>This is my Database with pl/sql Assignment project<br>Welcome everybody to collaborate!🕸️
 
 
 ## 🌐 Socials:
