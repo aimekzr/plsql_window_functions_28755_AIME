@@ -72,9 +72,9 @@ New Database with PL/SQL Projects
 
 ## SQL Screenshots with Explanations
  1. SQL JOINs Implementation
- - inner_join.png<br>Shows only matching rows from both tables.<br>
+ - inner_join.png<br>*Shows only matching rows from both tables.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
- - left_join.png<br>Shows all rows from the left table and matching rows from the right.<br>
+ - left_join.png<br>*Shows all rows from the left table and matching rows from the right.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/a3b07cac-e8ad-4cd9-be97-7f48f0646377" /><br>
  - right_join.png<br>Shows all rows from the right table and matching rows from the left.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/32a4a4e5-e904-4ca3-a237-ffaa4e7a3977" /><br>
