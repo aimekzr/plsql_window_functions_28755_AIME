@@ -45,7 +45,7 @@ New Database with PL/SQL Projects
 3. CREATE TABLE sales (
     salesID SERIAL PRIMARY KEY,
     customerID INT,
-    product_id INT,
+    productID INT,
     salesDate DATE,
     quantity INT,
     totalAmount NUMERIC(10,2) NOT NULL CHECK(totalAmount>0),
@@ -54,6 +54,6 @@ New Database with PL/SQL Projects
 );
 
 ### An ER diagram
-![Image](https://github.com/user-attachments/assets/f0c42122-05c8-45cb-90ec-83e0de47e1f3)
+
 
 
