@@ -95,6 +95,9 @@ New Database with PL/SQL Projects
 * DBMS notes by Temitope for join commands
 * Window functions (https://www.postgresql.org/docs/current/functions-window.html)
 * Youtube tutorials (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional
-* Youtube tutorials <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgres
-* Business Idea is mine
+* Youtube tutorials <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgresql
+* Business Idea is mine.
+# Integrity
+" All sources were properly cited. Implementations and analysis represent original work. No AI-
+generated content was copied without attribution or adaptation."
 
