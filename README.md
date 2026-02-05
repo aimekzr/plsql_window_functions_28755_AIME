@@ -94,12 +94,15 @@ New Database with PL/SQL Projects
 ## References 🤖
 Class Materials
 * DBMS notes by Temitope for join commands.
-* Lecture notes 
+* Lecture notes
+
 Online Sources
 * Window functions (https://www.postgresql.org/docs/current/functions-window.html)
+  
 Video tutorials 
 * Youtube tutorials (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional
 * Youtube tutorials <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgresql
+  
 IDEA
 * Business Idea is mine.
 # Integrity
