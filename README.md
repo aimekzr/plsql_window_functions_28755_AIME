@@ -1,4 +1,4 @@
-# About Me 🪄:
+# Information About Me 🪄:
 My name is Kwizera Aime<br>This is my Database with pl/sql Assignment project<br>Welcome everybody to collaborate!🕸️
 
 
@@ -92,5 +92,9 @@ New Database with PL/SQL Projects
  - ntile.png<br>* Divides rows into equal groups and numbers them.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
 ## References 🤖
-* DBMS notes by Temitope
-* Youtube tutorials (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for editing & look professional
+* DBMS notes by Temitope for join commands
+* Window functions (https://www.postgresql.org/docs/current/functions-window.html)
+* Youtube tutorials (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional
+* Youtube tutorials <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgres
+* Business Idea is mine
+
