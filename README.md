@@ -93,11 +93,11 @@ New Database with PL/SQL Projects
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
 ##  Key Insights
 
-A few products bring most of the sales revenue.
-High-value customers spend much more than other customers.
-Some products have no sales and may need promotion or replacement.
-Monthly sales go up and down, showing times when marketing should be improved.
-Running totals and averages help show the overall sales trend.
+- A few products bring most of the sales revenue.<br>
+- High-value customers spend much more than other customers.<br>
+- Some products have no sales and may need promotion or replacement.<br>
+- Monthly sales go up and down, showing times when marketing should be improved.<br>
+- Running totals and averages help show the overall sales trend.<br>
 
 ## References 🤖
 Class Materials
