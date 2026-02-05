@@ -1,4 +1,4 @@
-#  About Me 🪄:
+# About Me 🪄:
 My name is Kwizera Aime<br>This is my Database with pl/sql Assignment project<br>Welcome everybody to collaborate!🕸️
 
 
@@ -91,3 +91,6 @@ New Database with PL/SQL Projects
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/81e0576e-8003-4174-b94c-fe52efcf309c" /><br>
  - ntile.png<br>* Divides rows into equal groups and numbers them.<br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
+## References 🤖
+* DBMS notes by Temitope
+* Youtube tutorials (https://www.youtube.com/@codingszy) for editing & look professional<iframe width="315" height="576" src="https://www.youtube.com/embed/d87syC9_3Rk" title="Make your GitHub profile stand out in under 5 minutes! #github #tips #softwareengineer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
