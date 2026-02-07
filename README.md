@@ -72,19 +72,17 @@ The goal is to identify top-performing products, understand customer segments, a
 
 ## Step 4 & 5: SQL Screenshots with Explanations
  1. Part A. SQL JOINs Implementation<br>
- 
 **INNER JOIN inner_join.png** <br>  *Shows only matching rows from both tables.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
 **LEFT JOIN left_join.png** <br> *Shows all rows from the left table and matching rows from the right.* <br>
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/a3b07cac-e8ad-4cd9-be97-7f48f0646377" /><br>
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/d5a78cd3-3ed5-4231-87af-19d828a25e87" /> <br>
 **RIGHT JOIN right_join.png**<br>  *Shows all rows from the right table and matching rows from the left.* <br>
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/32a4a4e5-e904-4ca3-a237-ffaa4e7a3977" /><br>
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/9b87b4a0-debc-4893-a509-89827f55b8f0" /> <br>
 **FULL OUTER JOIN full_join.png**<br>  *Shows all rows from both tables, matching where possible.* <br>
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/f3bba839-9a72-44d0-afcf-7a0c5ccb8b3a" /><br>
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/2ee1276e-7151-49e1-a468-d35b8ce7e801" /><br>
 **SELF JOIN self_join.png**<br>  *Shows a table joining with itself.* <br>
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/382fd78f-57c2-4482-9d26-2f7fa660d058" /><br>
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/c051ac73-bf52-4860-8cea-cc4966fa8ac9" /><br>
  2. Part B. Window Functions Implementation<br>
- 
 **Ranking Functions rank.png**<br>  *Shows ranking of rows in a table.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" /><br>
 **Aggregate Window Functions running_total.png**<br>  *Shows cumulative total of values.* <br>
