@@ -71,7 +71,7 @@ The goal is to identify top-performing products, understand customer segments, a
 <img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/b2fe254c-6e4e-4ad8-b9f4-54e0936cf192" />
 
 ## Step 4 & 5: SQL Screenshots with Explanations
- ### 1. Part A. SQL JOINs Implementation<br> 
+ ### 1. Part A. SQL Joins Implementation <br> 
 #### Inner Join SQL Command <br>
   ```sql
 SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
