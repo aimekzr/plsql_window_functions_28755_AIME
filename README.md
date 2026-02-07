@@ -106,7 +106,7 @@ Class Materials<br>
 
 Online Sources <br>
  - Window functions (https://www.postgresql.org/docs/current/functions-window.html) <br>
- - Specific syntax and Key symbols <br>(https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>)
+ - Specific syntax and Key symbols Github Docs <br>(https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>)
  
 Video tutorials <br>
  - Youtube tutorials (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional <br>
