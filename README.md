@@ -68,7 +68,7 @@ The goal is to identify top-performing products, understand customer segments, a
 );
 
 ### An ER diagram
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/e410b088-b366-44c9-bdf5-267622452891" />
+<img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/b2fe254c-6e4e-4ad8-b9f4-54e0936cf192" />
 
 ## Step 4 & 5: SQL Screenshots with Explanations
  ### 1. Part A. SQL JOINs Implementation<br> 
@@ -79,7 +79,6 @@ FROM sales s
 INNER JOIN customer c ON s.customerid = c.customerid
 INNER JOIN products p ON s.productid = p.productid;
 ``` 
-
  **Inner Join Screenshot** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
 #### Left Join SQL Command <br>
@@ -89,7 +88,6 @@ FROM customer c
 LEFT JOIN sales s ON c.customerid = s.customerid
 WHERE s.salesid IS NULL;
 ```
-
 **Left Join Screenshot** <br> *"This LEFT JOIN identifies customers who have never made any purchases. In this dataset, all customers have bought products, so no inactive customers were found."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/d5a78cd3-3ed5-4231-87af-19d828a25e87" /> <br>
 #### Right Join SQL Command <br>
@@ -99,7 +97,6 @@ FROM sales s
 RIGHT JOIN products p ON s.productid = p.productid
 WHERE s.salesid IS NULL;
 ```
-
 **Right Join Screenshot**<br>  *"This RIGHT JOIN finds products that have not been sold. In this dataset, every product has sales, showing that all products are active."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/9b87b4a0-debc-4893-a509-89827f55b8f0" /> <br>
 #### Full Outer Join SQL Command <br>
@@ -109,7 +106,6 @@ FROM customer c
 FULL OUTER JOIN products p
 ON c.customerid = p.productid;
 ```
-
 **Full Outer Join screenshot**<br>  *"This FULL OUTER JOIN compares customers and products, including unmatched records. It helps identify any customers or products without relationships."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/2ee1276e-7151-49e1-a468-d35b8ce7e801" /><br>
 #### Self Join Command <br>
@@ -120,7 +116,6 @@ JOIN customer c2
 ON c1.region = c2.region
 AND c1.customerid <> c2.customerid;
 ```
-
 **Self Join Screenshot**<br>  *"This SELF JOIN compares customers in the same region. It helps the business understand which customers are located in the same areas."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/c051ac73-bf52-4860-8cea-cc4966fa8ac9" /><br>
 ### 2. Part B. Window Functions Implementation<br>
@@ -135,7 +130,6 @@ FROM sales s
 JOIN products p ON s.productid = p.productid
 GROUP BY p.productname;
 ```
-
 **Ranking Functions Screenshot**<br>  *"This query ranks products based on total revenue. It helps the business identify top-performing products and compare their relative performance"* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" /><br>
 #### Aggregate Window Function Command <br>
@@ -168,7 +162,6 @@ SELECT salesdate, totalamount,
     totalamount - LAG(totalamount) OVER (ORDER BY salesdate) AS sales_change
 FROM sales;
 ```
-
 **Navigation Functions Screenshot**<br> *"This query compares current sales with previous sales. It helps identify increases or decreases in revenue between periods."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/012bfd33-3af3-4da7-aa30-8a830c8452bb" /><br>
 #### Distribution Function Command <br>
