@@ -71,7 +71,7 @@ The goal is to identify top-performing products, understand customer segments, a
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/e410b088-b366-44c9-bdf5-267622452891" />
 
 ## Step 4 & 5: SQL Screenshots with Explanations
- 1. Part A. SQL JOINs Implementation<br>
+ ### 1. Part A. SQL JOINs Implementation<br>
 **INNER JOIN inner_join.png** <br>  *Shows only matching rows from both tables.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
 **LEFT JOIN left_join.png** <br> *Shows all rows from the left table and matching rows from the right.* <br>
@@ -82,7 +82,7 @@ The goal is to identify top-performing products, understand customer segments, a
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/2ee1276e-7151-49e1-a468-d35b8ce7e801" /><br>
 **SELF JOIN self_join.png**<br>  *Shows a table joining with itself.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/c051ac73-bf52-4860-8cea-cc4966fa8ac9" /><br>
- 2. Part B. Window Functions Implementation<br>
+### 2. Part B. Window Functions Implementation<br>
 **Ranking Functions rank.png**<br>  *Shows ranking of rows in a table.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" /><br>
 **Aggregate Window Functions running_total.png**<br>  *Shows cumulative total of values.* <br>
@@ -102,15 +102,15 @@ The goal is to identify top-performing products, understand customer segments, a
 ## References 🤖
 Class Materials<br>
 - DBMS notes by Temitope for join commands. <br>
-- Lecture notes <br>
+- Lecture notes. <br>
 
 Online Sources <br>
- - Window functions (https://www.postgresql.org/docs/current/functions-window.html) <br>
- - Specific syntax and Key symbols Github Docs <br>(https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>)
+ - Window functions. (https://www.postgresql.org/docs/current/functions-window.html) <br>
+ - Specific syntax and Key symbols Github Docs. <br>(https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>)
  
 Video tutorials <br>
- - Youtube tutorials (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional <br>
- - Youtube tutorials <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgresql <br>
+ - Youtube tutorials. (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional <br>
+ - Youtube tutorials. <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgresql <br>
   
 Business Idea <br>
  - Business Idea is mine. <br>
