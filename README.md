@@ -79,7 +79,7 @@ INNER JOIN customer c ON s.customerid = c.customerid
 INNER JOIN products p ON s.productid = p.productid;
 ``` 
 
- <br> **INNER JOIN inner_join.png** <br> *"This INNER JOIN shows all completed sales with matching customer and product information. It helps the business see which customers bought which products and how much money each sale generated."* <br>
+ <br> **INNER JOIN inner_join.png** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
 
 **LEFT JOIN left_join.png** <br> *Shows all rows from the left table and matching rows from the right.* <br>
