@@ -1,12 +1,12 @@
-# Information About Me 🪄:
+# Information About Me 🪄
 My name is Kwizera Aime<br>
 Stusent ID: 28755 <br>
 This is my Database with pl/sql Assignment 1<br>
 
-## 🌐 Socials:
+## 🌐 Socials
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.gg/yRSgqtf2) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/aime41_) 
 
-# 💻 Tech Stack:
+# 💻 Tech Stack
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 [![](https://visitcount.itsvg.in/api?id=aimekzr&icon=0&color=0)](https://visitcount.itsvg.in)
@@ -91,7 +91,7 @@ The goal is to identify top-performing products, understand customer segments, a
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/81e0576e-8003-4174-b94c-fe52efcf309c" /><br>
 **Distribution Functions ntile.png**<br> *Divides rows into equal groups and numbers them.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
-##  Key Insights
+## Step 6: Key Insights
 
  - A few products bring most of the sales revenue.<br>
  - High-value customers spend much more than other customers.<br>
@@ -114,7 +114,7 @@ Video tutorials <br>
   
 Business Idea <br>
  - Business Idea is mine. <br>
-# Integrity <br>
+# Integrity Statement <br>
 " All sources were properly cited. Implementations and analysis represent original work. No AI-
 generated content was copied without attribution or adaptation."
 
