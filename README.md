@@ -72,7 +72,13 @@ The goal is to identify top-performing products, understand customer segments, a
 
 ## Step 4 & 5: SQL Screenshots with Explanations
  ### 1. Part A. SQL JOINs Implementation<br>
-**INNER JOIN inner_join.png** <br>  *Shows only matching rows from both tables.* <br>
+**INNER JOIN inner_join.png** 
+#### SQL COMMAND
+SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
+FROM sales s
+INNER JOIN customer c ON s.customerid = c.customerid
+INNER JOIN products p ON s.productid = p.productid;
+ <br>  *Shows only matching rows from both tables.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
 **LEFT JOIN left_join.png** <br> *Shows all rows from the left table and matching rows from the right.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/d5a78cd3-3ed5-4231-87af-19d828a25e87" /> <br>
