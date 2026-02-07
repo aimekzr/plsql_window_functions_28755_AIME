@@ -124,12 +124,36 @@ AND c1.customerid <> c2.customerid;
 **SELF JOIN Screenshot**<br>  *"This SELF JOIN compares customers in the same region. It helps the business understand which customers are located in the same areas."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/c051ac73-bf52-4860-8cea-cc4966fa8ac9" /><br>
 ### 2. Part B. Window Functions Implementation<br>
-**Ranking Functions rank.png**<br>  *Shows ranking of rows in a table.* <br>
+#### RANKING FUNCTION Command
+```sql
+SELECT p.productname, SUM(s.totalamount) AS total_sales,
+    ROW_NUMBER() OVER (ORDER BY SUM(s.totalamount) DESC) AS row_num,
+    RANK() OVER (ORDER BY SUM(s.totalamount) DESC) AS rank,
+    DENSE_RANK() OVER (ORDER BY SUM(s.totalamount) DESC) AS dense_rank,
+    PERCENT_RANK() OVER (ORDER BY SUM(s.totalamount)) AS percent_rank
+FROM sales s
+JOIN products p ON s.productid = p.productid
+GROUP BY p.productname;
+```
+
+**Ranking Functions Screenshot**<br>  *"This query ranks products based on total revenue. It helps the business identify top-performing products and compare their relative performance"* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" /><br>
-**Aggregate Window Functions running_total.png**<br>  *Shows cumulative total of values.* <br>
+#### AGGREGATE WINDOW FUNCTION Command
+```sql
+
+```
+**Aggregate Window Functions running_total.png**<br>  .* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/16f3b2f6-ccc6-4afa-a3ef-70e797099f14" /><br>
-**Navigation Functions lag.png**<br> *Shows previous row value for comparison.* <br>
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/81e0576e-8003-4174-b94c-fe52efcf309c" /><br>
+#### NAVIGATION FUNCTION Command
+```sql
+SELECT salesdate, totalamount,
+    LAG(totalamount) OVER (ORDER BY salesdate) AS previous_sales,
+    totalamount - LAG(totalamount) OVER (ORDER BY salesdate) AS sales_change
+FROM sales;
+```
+
+**Navigation Functions Screenshot**<br> *"This query compares current sales with previous sales. It helps identify increases or decreases in revenue between periods."* <br>
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/95887173-cc86-43c5-b70b-4aa69d4a625a" /><br>
 **Distribution Functions ntile.png**<br> *Divides rows into equal groups and numbers them.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
 ## Step 6: Key Insights
