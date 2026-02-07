@@ -97,7 +97,7 @@ FROM sales s
 RIGHT JOIN products p ON s.productid = p.productid
 WHERE s.salesid IS NULL;
 ```
-**Right Join Screenshot**<br>  *"This RIGHT JOIN finds products that have not been sold. In this case, only Tablet are not sold."* <br>
+**Right Join Screenshot**<br>  *"This RIGHT JOIN finds products that have not been sold. In this case, only Tablet which is not sold."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/9b87b4a0-debc-4893-a509-89827f55b8f0" /> <br>
 #### Full Outer Join SQL Command <br>
 ```sql
