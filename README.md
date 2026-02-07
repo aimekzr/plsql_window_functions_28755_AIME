@@ -72,17 +72,25 @@ The goal is to identify top-performing products, understand customer segments, a
 
 ## Step 4 & 5: SQL Screenshots with Explanations
  ### 1. Part A. SQL JOINs Implementation<br> 
-#### SQL COMMAND <br>
-  ```sql SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
+#### INNER JOIN SQL COMMAND <br>
+  ```sql
+SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
 FROM sales s
 INNER JOIN customer c ON s.customerid = c.customerid
 INNER JOIN products p ON s.productid = p.productid;
 ``` 
 
- <br> **INNER JOIN inner_join.png** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
+ **INNER JOIN SCREENSHOT** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
+#### LEFT JOIN SQL COMMAND <br>
+```sql
+SELECT c.customerid, c.name, c.region
+FROM customer c
+LEFT JOIN sales s ON c.customerid = s.customerid
+WHERE s.salesid IS NULL;
+```
 
-**LEFT JOIN left_join.png** <br> *Shows all rows from the left table and matching rows from the right.* <br>
+**LEFT JOIN left_join.png** <br> *This LEFT JOIN identifies customers who have never made any purchases. In this dataset, all customers have bought products, so no inactive customers were found.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/d5a78cd3-3ed5-4231-87af-19d828a25e87" /> <br>
 **RIGHT JOIN right_join.png**<br>  *Shows all rows from the right table and matching rows from the left.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/9b87b4a0-debc-4893-a509-89827f55b8f0" /> <br>
