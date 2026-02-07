@@ -72,13 +72,16 @@ The goal is to identify top-performing products, understand customer segments, a
 
 ## Step 4 & 5: SQL Screenshots with Explanations
  ### 1. Part A. SQL JOINs Implementation<br> 
-#### SQL COMMAND
-SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
+#### SQL COMMAND <br>
+  ```sql SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
 FROM sales s
 INNER JOIN customer c ON s.customerid = c.customerid
 INNER JOIN products p ON s.productid = p.productid;
- <br> **INNER JOIN inner_join.png** <br> *Shows only matching rows from both tables.* <br>
+``` 
+
+ <br> **INNER JOIN inner_join.png** <br> *"This INNER JOIN shows all completed sales with matching customer and product information. It helps the business see which customers bought which products and how much money each sale generated."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
+
 **LEFT JOIN left_join.png** <br> *Shows all rows from the left table and matching rows from the right.* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/d5a78cd3-3ed5-4231-87af-19d828a25e87" /> <br>
 **RIGHT JOIN right_join.png**<br>  *Shows all rows from the right table and matching rows from the left.* <br>
@@ -110,6 +113,8 @@ Class Materials<br>
 - Lecture notes. <br>
 
 Online Sources <br>
+ - How to Creating and highlighting code blocks SQL commands in README.md.
+   (https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
  - Window functions. (https://www.postgresql.org/docs/current/functions-window.html) <br>
  - Specific syntax and Key symbols Github Docs. <br>(https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>)
  
