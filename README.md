@@ -72,7 +72,7 @@ The goal is to identify top-performing products, understand customer segments, a
 
 ## Step 4 & 5: SQL Screenshots with Explanations
  ### 1. Part A. SQL JOINs Implementation<br> 
-#### INNER JOIN SQL COMMAND <br>
+#### INNER JOIN SQL Command <br>
   ```sql
 SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
 FROM sales s
@@ -80,9 +80,9 @@ INNER JOIN customer c ON s.customerid = c.customerid
 INNER JOIN products p ON s.productid = p.productid;
 ``` 
 
- **INNER JOIN SCREENSHOT** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
+ **INNER JOIN Screenshot** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
-#### LEFT JOIN SQL COMMAND <br>
+#### LEFT JOIN SQL Command <br>
 ```sql
 SELECT c.customerid, c.name, c.region
 FROM customer c
@@ -90,13 +90,38 @@ LEFT JOIN sales s ON c.customerid = s.customerid
 WHERE s.salesid IS NULL;
 ```
 
-**LEFT JOIN left_join.png** <br> *This LEFT JOIN identifies customers who have never made any purchases. In this dataset, all customers have bought products, so no inactive customers were found.* <br>
+**LEFT JOIN Screenshot** <br> *"This LEFT JOIN identifies customers who have never made any purchases. In this dataset, all customers have bought products, so no inactive customers were found."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/d5a78cd3-3ed5-4231-87af-19d828a25e87" /> <br>
-**RIGHT JOIN right_join.png**<br>  *Shows all rows from the right table and matching rows from the left.* <br>
+#### RIGHT JOIN SQL Command <br>
+```sql
+SELECT p.productid, p.productname
+FROM sales s
+RIGHT JOIN products p ON s.productid = p.productid
+WHERE s.salesid IS NULL;
+```
+
+**RIGHT JOIN Screenshot**<br>  *"This RIGHT JOIN finds products that have not been sold. In this dataset, every product has sales, showing that all products are active."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/9b87b4a0-debc-4893-a509-89827f55b8f0" /> <br>
-**FULL OUTER JOIN full_join.png**<br>  *Shows all rows from both tables, matching where possible.* <br>
+#### FULL JOIN SQL Command <br>
+```sql
+SELECT c.name, p.productname
+FROM customer c
+FULL OUTER JOIN products p
+ON c.customerid = p.productid;
+```
+
+**FULL OUTER JOIN screenshot**<br>  *"This FULL OUTER JOIN compares customers and products, including unmatched records. It helps identify any customers or products without relationships."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/2ee1276e-7151-49e1-a468-d35b8ce7e801" /><br>
-**SELF JOIN self_join.png**<br>  *Shows a table joining with itself.* <br>
+#### SELF JOIN Command <br>
+```sql
+SELECT c1.name AS customer1, c2.name AS customer2, c1.region
+FROM customer c1
+JOIN customer c2
+ON c1.region = c2.region
+AND c1.customerid <> c2.customerid;
+```
+
+**SELF JOIN Screenshot**<br>  *"This SELF JOIN compares customers in the same region. It helps the business understand which customers are located in the same areas."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/c051ac73-bf52-4860-8cea-cc4966fa8ac9" /><br>
 ### 2. Part B. Window Functions Implementation<br>
 **Ranking Functions rank.png**<br>  *Shows ranking of rows in a table.* <br>
