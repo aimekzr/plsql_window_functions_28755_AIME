@@ -72,7 +72,7 @@ The goal is to identify top-performing products, understand customer segments, a
 
 ## Step 4 & 5: SQL Screenshots with Explanations
  ### 1. Part A. SQL JOINs Implementation<br> 
-#### INNER JOIN SQL Command <br>
+#### Inner Join SQL Command <br>
   ```sql
 SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
 FROM sales s
@@ -80,9 +80,9 @@ INNER JOIN customer c ON s.customerid = c.customerid
 INNER JOIN products p ON s.productid = p.productid;
 ``` 
 
- **INNER JOIN Screenshot** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
+ **Inner Join Screenshot** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
-#### LEFT JOIN SQL Command <br>
+#### Left Join SQL Command <br>
 ```sql
 SELECT c.customerid, c.name, c.region
 FROM customer c
@@ -90,9 +90,9 @@ LEFT JOIN sales s ON c.customerid = s.customerid
 WHERE s.salesid IS NULL;
 ```
 
-**LEFT JOIN Screenshot** <br> *"This LEFT JOIN identifies customers who have never made any purchases. In this dataset, all customers have bought products, so no inactive customers were found."* <br>
+**Left Join Screenshot** <br> *"This LEFT JOIN identifies customers who have never made any purchases. In this dataset, all customers have bought products, so no inactive customers were found."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/d5a78cd3-3ed5-4231-87af-19d828a25e87" /> <br>
-#### RIGHT JOIN SQL Command <br>
+#### Right Join SQL Command <br>
 ```sql
 SELECT p.productid, p.productname
 FROM sales s
@@ -100,9 +100,9 @@ RIGHT JOIN products p ON s.productid = p.productid
 WHERE s.salesid IS NULL;
 ```
 
-**RIGHT JOIN Screenshot**<br>  *"This RIGHT JOIN finds products that have not been sold. In this dataset, every product has sales, showing that all products are active."* <br>
+**Right Join Screenshot**<br>  *"This RIGHT JOIN finds products that have not been sold. In this dataset, every product has sales, showing that all products are active."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/9b87b4a0-debc-4893-a509-89827f55b8f0" /> <br>
-#### FULL JOIN SQL Command <br>
+#### Full Outer Join SQL Command <br>
 ```sql
 SELECT c.name, p.productname
 FROM customer c
@@ -110,9 +110,9 @@ FULL OUTER JOIN products p
 ON c.customerid = p.productid;
 ```
 
-**FULL OUTER JOIN screenshot**<br>  *"This FULL OUTER JOIN compares customers and products, including unmatched records. It helps identify any customers or products without relationships."* <br>
+**Full Outer Join screenshot**<br>  *"This FULL OUTER JOIN compares customers and products, including unmatched records. It helps identify any customers or products without relationships."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/2ee1276e-7151-49e1-a468-d35b8ce7e801" /><br>
-#### SELF JOIN Command <br>
+#### Self Join Command <br>
 ```sql
 SELECT c1.name AS customer1, c2.name AS customer2, c1.region
 FROM customer c1
@@ -121,10 +121,10 @@ ON c1.region = c2.region
 AND c1.customerid <> c2.customerid;
 ```
 
-**SELF JOIN Screenshot**<br>  *"This SELF JOIN compares customers in the same region. It helps the business understand which customers are located in the same areas."* <br>
+**Self Join Screenshot**<br>  *"This SELF JOIN compares customers in the same region. It helps the business understand which customers are located in the same areas."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/c051ac73-bf52-4860-8cea-cc4966fa8ac9" /><br>
 ### 2. Part B. Window Functions Implementation<br>
-#### RANKING FUNCTION Command
+#### Ranking Function Command <br>
 ```sql
 SELECT p.productname, SUM(s.totalamount) AS total_sales,
     ROW_NUMBER() OVER (ORDER BY SUM(s.totalamount) DESC) AS row_num,
@@ -138,13 +138,30 @@ GROUP BY p.productname;
 
 **Ranking Functions Screenshot**<br>  *"This query ranks products based on total revenue. It helps the business identify top-performing products and compare their relative performance"* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" /><br>
-#### AGGREGATE WINDOW FUNCTION Command
+#### Aggregate Window Function Command <br>
 ```sql
-
+SELECT salesdate, totalamount,
+    SUM(totalamount) OVER (
+        ORDER BY salesdate
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS running_total,
+    AVG(totalamount) OVER (
+        ORDER BY salesdate
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS average_sales,
+    MIN(totalamount) OVER (
+        ORDER BY salesdate
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS minimum_sales,
+    MAX(totalamount) OVER (
+        ORDER BY salesdate
+        ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW
+    ) AS maximum_sales
+FROM sales;
 ```
-**Aggregate Window Functions running_total.png**<br>  .* <br>
+**Aggregate Window Functions Screenshot**<br> *"This query tracks cumulative sales, average performance, and sales limits over time. It helps management understand growth patterns and identify low and high sales periods."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/16f3b2f6-ccc6-4afa-a3ef-70e797099f14" /><br>
-#### NAVIGATION FUNCTION Command
+#### Navigation Function Command <br>
 ```sql
 SELECT salesdate, totalamount,
     LAG(totalamount) OVER (ORDER BY salesdate) AS previous_sales,
@@ -153,8 +170,17 @@ FROM sales;
 ```
 
 **Navigation Functions Screenshot**<br> *"This query compares current sales with previous sales. It helps identify increases or decreases in revenue between periods."* <br>
-<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/95887173-cc86-43c5-b70b-4aa69d4a625a" /><br>
-**Distribution Functions ntile.png**<br> *Divides rows into equal groups and numbers them.* <br>
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/012bfd33-3af3-4da7-aa30-8a830c8452bb" /><br>
+#### Distribution Function Command <br>
+```sql
+SELECT c.name, SUM(s.totalamount) AS total_spent,
+    NTILE(4) OVER (ORDER BY SUM(s.totalamount)) AS spending_quartile,
+    CUME_DIST() OVER (ORDER BY SUM(s.totalamount)) AS cumulative_distribution
+FROM customer c
+JOIN sales s ON c.customerid = s.customerid
+GROUP BY c.name;
+```
+**Distribution Functions Screenshot**<br> *"This query divides customers into four spending groups. It helps the business identify high-value and low-value customers for targeted strategies."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
 ## Step 6: Key Insights
 
