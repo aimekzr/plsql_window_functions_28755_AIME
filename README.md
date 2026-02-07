@@ -13,8 +13,7 @@ This is my Database with pl/sql Assignment 1<br>
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 # plsql_window_functions_28755_AIME
-Database with PL/SQL Assignment 1
-
+Database with PL/SQL Assignment 1 <br> Database name: onlinedbms
 ## Step 1: Problem Definition
 
 ### Business Context
@@ -197,7 +196,7 @@ Online Sources <br>
  
 Video tutorials <br>
  - Youtube tutorials. (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional <br>
- - Youtube tutorials. <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgresql <br>
+ - Youtube tutorials. <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgres <br>
   
 Business Idea <br>
  - Business Idea is mine. <br>
