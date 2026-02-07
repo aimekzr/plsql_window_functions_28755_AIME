@@ -1,26 +1,26 @@
 # Information About Me 🪄:
 My name is Kwizera Aime<br>
 Stusent ID: 28755 <br>
-This is my Database with pl/sql Assignment 1<br>Welcome everybody to collaborate!🕸️
+This is my Database with pl/sql Assignment 1<br>
 
 ## 🌐 Socials:
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.gg/yRSgqtf2) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/aime41_) 
 
 # 💻 Tech Stack:
 ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
----
+
 [![](https://visitcount.itsvg.in/api?id=aimekzr&icon=0&color=0)](https://visitcount.itsvg.in)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 # plsql_window_functions_28755_AIME
-New Database with PL/SQL Projects
+Database with PL/SQL Assignment 1
 
 ## Step 1: Problem Definition
 
 ### Business Context
 My business context is an online retail store company. The analysis focuses on the sales department of E-commerce industry.
 
-### Data Challenge
+### Data Challenge !🕸️
 The online store keeps data about customers, products, prices, stock, delivery, and transactions. However, the business does not know exactly which products sell the most, which bring more income, or how sales change over time. Because of this, it is hard to manage stock or invertory, plan deliveries, and make good pricing decisions.
 
 ### Expected Outcome
@@ -103,15 +103,15 @@ The goal is to identify top-performing products, understand customer segments, a
 Class Materials<br>
 - DBMS notes by Temitope for join commands. <br>
 - Lecture notes <br>
-
+- 
 Online Sources <br>
  - Window functions (https://www.postgresql.org/docs/current/functions-window.html) <br>
-  
+ 
 Video tutorials <br>
  - Youtube tutorials (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional <br>
  - Youtube tutorials <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgresql <br>
   
-IDEA <br>
+Business Idea <br>
  - Business Idea is mine. <br>
 # Integrity <br>
 " All sources were properly cited. Implementations and analysis represent original work. No AI-
