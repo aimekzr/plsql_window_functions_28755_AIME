@@ -44,23 +44,34 @@ The goal is to identify top-performing products, understand customer segments, a
 
 ## Step 3: Database Schema Design
 
-### Tables 
-1. Customer - stores information about customers 
-2. Products - Stores the products that are being sold
-3. Sales - Records every sale transaction.
+### Tables with attributes 
+1. Customer (customerID, customerName, region) - stores information about customers 
+2. Products (productID, productName, price) - Stores the products that are being sold
+3. Sales (salesID, salesDate, quantity) - Records every sale transaction.
 ###  Three (3) related tables with primary and foreign keys.
-- CREATE DATABASE onlinedbms;
-1. CREATE TABLE customer (
+- Create database
+```sql
+  CREATE DATABASE onlinedbms;
+  ```
+1. Customer table
+```sql
+CREATE TABLE customer (
     customerID SERIAL PRIMARY KEY,
     customerName VARCHAR(50) NOT NULL,
     region VARCHAR(50) NOT NULL
 );
-2. CREATE TABLE products (
+```
+2. Products table
+```sql
+CREATE TABLE products (
     productID SERIAL PRIMARY KEY,
     productName VARCHAR(50) NOT NULL,
     price DECIMAL(10,2) NOT NULL CHECK (price>0)
 );
-3. CREATE TABLE sales (
+```
+3. Sales table
+```sql
+   CREATE TABLE sales (
     salesID SERIAL PRIMARY KEY,
     customerID INT,
     productID INT,
@@ -70,7 +81,12 @@ The goal is to identify top-performing products, understand customer segments, a
     FOREIGN KEY (customerID) REFERENCES customers(customerID),
     FOREIGN KEY (productID) REFERENCES products(productID)
 );
-
+```
+- This is syntax of how I insert my data in database table
+```sql
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
+  ```
 ### An ER diagram
 <img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/b2fe254c-6e4e-4ad8-b9f4-54e0936cf192" />
 
@@ -186,21 +202,21 @@ It summarize data.
 ```sql
 SELECT COUNT(*) AS total_sales, SUM(totalAmount) AS total_revenue FROM SALES;
 ```
-**Total sales Screenshot**
+**Total sales Screenshot** <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/eec907cf-3eb1-4f38-b380-cb787843677c" />
 #### Total revenue
 ```sql
 SELECT SUM(totalAmount) AS total_revenue
 FROM SALES;
 ```
-**Total revenue Screenshot**
+**Total revenue Screenshot** <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/64b87641-0b66-48ae-a48f-82f031af47e1" />
 #### Average sale amount
 ```sql
 SELECT AVG(totalAmount) AS average_sale_amount
 FROM SALES;
 ```
-**Average sale amount**
+**Average sale amount Screenshot** <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/492c54c6-0a70-4100-bca0-428328a83858" />
 #### Most sold product (by total quantity) return only one top sales.
 ```sql
@@ -210,7 +226,7 @@ GROUP BY productID
 ORDER BY total_quantity_sold DESC
 LIMIT 1;
 ```
-**Most sold product (by total quantity) Screenshot**
+**Most sold product (by total quantity) Screenshot** <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/5e34b3f9-c0d7-4b39-9840-b921d66b0e64" />
 #### Top customer by purchases (highest totalAmount) only one customer who spend the most.
 ```sql
@@ -220,12 +236,14 @@ GROUP BY customerID
 ORDER BY total_spent DESC
 LIMIT 1;
 ```
-**Top customer by purchases Screenshot**
+**Top customer by purchases Screenshot** <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/70c46647-286d-490f-ad37-bf4504cfc230" />
 ### Diagnostic — Why did it happen?
 Product 5 sold the most likely because it is highly popular, while Customer 2 spent the most due to purchasing higher-value items. The average sale amount of 399.05 shows most transactions are moderate, and lower sales on some dates may be caused by fewer purchases or limited stock.
+
 ### Prescriptive — What should be done next?
 To improve results, Product 5 should be restocked to meet demand, top customers like Customer 2 should be targeted with loyalty programs or discounts, and low-selling products or slow sales days should be addressed through promotions or better marketing.
+
 ### Key Insights
  - Product 5 is the most popular → stock management is crucial.<br>
  - Customer 2 is the top spender → target them for 0ffers & discounts.<br>
