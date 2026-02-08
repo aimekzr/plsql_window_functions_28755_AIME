@@ -201,6 +201,6 @@ GROUP BY c.name;
 **Business Idea** <br>
  - Business Idea is mine. <br>
 ## Integrity Statement <br>
-" All sources were properly cited. Implementations and analysis represent original work. No AI-
+ "All sources were properly cited. Implementations and analysis represent original work. No AI-
 generated content was copied without attribution or adaptation."
 
