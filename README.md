@@ -45,7 +45,9 @@ The goal is to identify top-performing products, understand customer segments, a
 ## Step 3: Database Schema Design
 
 ### Tables 
-CUSTOMER, PRODUCTS & SALES
+1. Customer - stores information about customers 
+2. Products - Stores the products that are being sold
+3. Sales - Records every sale transaction.
 ###  Three (3) related tables with primary and foreign keys.
 - CREATE DATABASE onlinedbms;
 1. CREATE TABLE customer (
