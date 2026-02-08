@@ -41,7 +41,6 @@ The goal is to identify top-performing products, understand customer segments, a
 - A goal to calculate the average sales over the last three months to smooth short-term changes.
 
 ## Step 3: Database Schema Design
-
 ### Tables with attributes 
 1. **Customer** (customerID, customerName, region) - stores information about customers 
 2. **Products** (productID, productName, price) - Stores the products that are being sold
@@ -52,6 +51,13 @@ The goal is to identify top-performing products, understand customer segments, a
   CREATE DATABASE onlinedbms;
   ```
 1. Customer table
+
+| Column       | Type        | Description                |
+|--------------|-------------|----------------------------|
+| customerID   | INT (PK)    | Unique customer identifier |
+| customerName | VARCHAR(50) | Full name of the customer  |
+| region       | VARCHAR(50) | Customer’s region          |
+
 ```sql
 CREATE TABLE customer (
     customerID SERIAL PRIMARY KEY,
@@ -60,6 +66,13 @@ CREATE TABLE customer (
 );
 ```
 2. Products table
+
+| Column      | Type          | Description               |
+| ----------- | ------------- | ------------------------- |
+| productID   | INT (PK)      | Unique product identifier |
+| productName | VARCHAR(50)   | Name of the product       |
+| price       | DECIMAL(10,2) | Price of the product      |
+
 ```sql
 CREATE TABLE products (
     productID SERIAL PRIMARY KEY,
@@ -68,6 +81,15 @@ CREATE TABLE products (
 );
 ```
 3. Sales table
+
+| Column      | Type          | Description                         |
+| ----------- | ------------- | ----------------------------------- |
+| salesID     | INT (PK)      | Unique sales transaction identifier |
+| customerID  | INT (FK)      | References customer(customerID)     |
+| productID   | INT (FK)      | References products(productID)      |
+| salesDate   | DATE          | Date when the sale occurred         |
+| quantity    | INT           | Number of products sold             |
+| totalAmount | DECIMAL(10,2) | Total amount earned from the sale   |
 ```sql
    CREATE TABLE sales (
     salesID SERIAL PRIMARY KEY,
