@@ -58,6 +58,7 @@ The goal is to identify top-performing products, understand customer segments, a
 | customerName | VARCHAR(50) | Full name of the customer  |
 | region       | VARCHAR(50) | Customer’s region          |
 
+- Create customer table in onlinedbms
 ```sql
 CREATE TABLE customer (
     customerID SERIAL PRIMARY KEY,
@@ -73,6 +74,7 @@ CREATE TABLE customer (
 | productName | VARCHAR(50)   | Name of the product       |
 | price       | DECIMAL(10,2) | Price of the product      |
 
+- Create products table in onlinedbms
 ```sql
 CREATE TABLE products (
     productID SERIAL PRIMARY KEY,
@@ -90,6 +92,8 @@ CREATE TABLE products (
 | salesDate   | DATE          | Date when the sale occurred         |
 | quantity    | INT           | Number of products sold             |
 | totalAmount | DECIMAL(10,2) | Total amount earned from the sale   |
+
+- Create sales table in onlinedbms
 ```sql
    CREATE TABLE sales (
     salesID SERIAL PRIMARY KEY,
