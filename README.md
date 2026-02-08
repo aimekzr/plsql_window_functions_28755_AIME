@@ -1,7 +1,8 @@
 # Information About Me 🪄
-My name is Kwizera Aime<br>
+My name is Kwizera Aime<br>                                                                     Date:8th, Feb 2026
 Stusent ID: 28755 <br>
-This is my Database with pl/sql Assignment 1<br>
+Group: D
+Database with pl/sql Assignment 1<br>
 
 ## 🌐 Socials
 [![Discord](https://img.shields.io/badge/Discord-%237289DA.svg?logo=discord&logoColor=white)](https://discord.gg/https://discord.gg/yRSgqtf2) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/aime41_) 
