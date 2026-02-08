@@ -43,6 +43,9 @@ The goal is to identify top-performing products, understand customer segments, a
 - A goal to calculate the average sales over the last three months to smooth short-term changes.
 
 ## Step 3: Database Schema Design
+
+### Tables 
+CUSTOMER, PRODUCTS & SALES
 ###  Three (3) related tables with primary and foreign keys.
 - CREATE DATABASE onlinedbms;
 1. CREATE TABLE customer (
