@@ -195,8 +195,7 @@ GROUP BY c.name;
 **Distribution Functions Screenshot**<br> *"This query divides customers into four spending groups. It helps the business identify high-value and low-value customers for targeted strategies."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
 ## Step 6: Results Analysis 
-### Descriptive (What happened?)
-It summarize data.
+### Descriptive (What happened?) - It summarize data. 
 #### Total number of sales Command
 ```sql
 SELECT COUNT(*) AS total_sales, SUM(totalAmount) AS total_revenue FROM SALES;
@@ -237,10 +236,10 @@ LIMIT 1;
 ```
 **Top customer by purchases Screenshot** <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/70c46647-286d-490f-ad37-bf4504cfc230" />
-### Diagnostic — Why did it happen?
+### Diagnostic — Why did it happen? - explaining the reasons behind the facts.
 Product 5 sold the most likely because it is highly popular, while Customer 2 spent the most due to purchasing higher-value items. The average sale amount of 399.05 shows most transactions are moderate, and lower sales on some dates may be caused by fewer purchases or limited stock.
 
-### Prescriptive — What should be done next?
+### Prescriptive — What should be done next? - Making recommendations based on your findings.
 To improve results, Product 5 should be restocked to meet demand, top customers like Customer 2 should be targeted with loyalty programs or discounts, and low-selling products or slow sales days should be addressed through promotions or better marketing.
 
 ## Step 7: Key Insights
