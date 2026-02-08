@@ -183,22 +183,22 @@ GROUP BY c.name;
  - Running totals and averages help show the overall sales trend.<br>
 
 ## References 🤖
-Class Materials<br>
+**Class Materials**<br>
 - DBMS notes by Temitope for join commands. <br>
 - Lecture notes. <br>
 
-Online Sources <br>
+**Online Sources** <br>
  - How to Creating and highlighting code blocks SQL commands in README.md.
    (https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/creating-and-highlighting-code-blocks)
  - Window functions. (https://www.postgresql.org/docs/current/functions-window.html) <br>
  - Specific syntax and Key symbols Github Docs. <br>(https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax>)
  - ER Diagram designed by using. (https://app.diagrams.net/)
  
-Video tutorials <br>
+**Video tutorials** <br>
  - Youtube tutorials. (https://www.youtube.com/shorts/d87syC9_3Rk?feature=share) for github repository editing & look professional <br>
  - Youtube tutorials. <https://youtu.be/UfecjNcR4rQ> for Create database and tables using postgres <br>
   
-Business Idea <br>
+**Business Idea** <br>
  - Business Idea is mine. <br>
 ## Integrity Statement <br>
 " All sources were properly cited. Implementations and analysis represent original work. No AI-
