@@ -27,7 +27,7 @@ The goal is to identify top-performing products, understand customer segments, a
  
  ## Step 2: Success Criteria
 
-1. Top 5 products per region or quarter → RANK()**
+1. Top 5 products per region or quarter → RANK()
 - A goal to rank products by sales in each region and select the top  five consumed products based on total sales.
 
 2. Running monthly sales totals → SUM() OVER()
@@ -179,13 +179,59 @@ GROUP BY c.name;
 ```
 **Distribution Functions Screenshot**<br> *"This query divides customers into four spending groups. It helps the business identify high-value and low-value customers for targeted strategies."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/354b7511-72ba-4127-b1a9-a939a574a0b6" /><br>
-## Step 6: Key Insights
-
- - A few products bring most of the sales revenue.<br>
- - High-value customers spend much more than other customers.<br>
+## Step 6: Results Analysis 
+### Descriptive (What happened?)
+It summarize data.
+#### Total number of sales Command
+```sql
+SELECT COUNT(*) AS total_sales, SUM(totalAmount) AS total_revenue FROM SALES;
+```
+**Total sales Screenshot**
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/eec907cf-3eb1-4f38-b380-cb787843677c" />
+#### Total revenue
+```sql
+SELECT SUM(totalAmount) AS total_revenue
+FROM SALES;
+```
+**Total revenue Screenshot**
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/64b87641-0b66-48ae-a48f-82f031af47e1" />
+#### Average sale amount
+```sql
+SELECT AVG(totalAmount) AS average_sale_amount
+FROM SALES;
+```
+**Average sale amount**
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/492c54c6-0a70-4100-bca0-428328a83858" />
+#### Most sold product (by total quantity) return only one top sales.
+```sql
+SELECT productID, SUM(quantity) AS total_quantity_sold
+FROM SALES
+GROUP BY productID
+ORDER BY total_quantity_sold DESC
+LIMIT 1;
+```
+**Most sold product (by total quantity) Screenshot**
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/5e34b3f9-c0d7-4b39-9840-b921d66b0e64" />
+#### Top customer by purchases (highest totalAmount) only one customer who spend the most.
+```sql
+SELECT customerID, SUM(totalAmount) AS total_spent
+FROM SALES
+GROUP BY customerID
+ORDER BY total_spent DESC
+LIMIT 1;
+```
+**Top customer by purchases Screenshot**
+<img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/70c46647-286d-490f-ad37-bf4504cfc230" />
+### Diagnostic — Why did it happen?
+Product 5 sold the most likely because it is highly popular, while Customer 2 spent the most due to purchasing higher-value items. The average sale amount of 399.05 shows most transactions are moderate, and lower sales on some dates may be caused by fewer purchases or limited stock.
+### Prescriptive — What should be done next?
+To improve results, Product 5 should be restocked to meet demand, top customers like Customer 2 should be targeted with loyalty programs or discounts, and low-selling products or slow sales days should be addressed through promotions or better marketing.
+### Key Insights
+ - Product 5 is the most popular → stock management is crucial.<br>
+ - Customer 2 is the top spender → target them for 0ffers & discounts.<br>
  - Some products have no sales and may need promotion or replacement.<br>
  - Monthly sales go up and down, showing times when marketing should be improved.<br>
- - Running totals and averages help show the overall sales trend.<br>
+ - Average sale amount = 399.05 → standard for planning pricing and offers.<br>
 
 ## References 🤖
 **Class Materials**<br>
