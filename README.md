@@ -90,9 +90,8 @@ VALUES (value1, value2, value3);
 ### An ER diagram
 <img width="600" height="300" alt="Image" src="https://github.com/user-attachments/assets/b2fe254c-6e4e-4ad8-b9f4-54e0936cf192" />
 
-## Step 4 & 5: SQL Screenshots with Explanations
- ### 1. Part A. SQL Joins Implementation <br> 
-#### Inner Join SQL Command <br>
+## Step 4: Part A. SQL Joins Implementation  
+### Inner Join SQL Command 
   ```sql
 SELECT s.salesid, s.salesdate, c.name AS customer_name, p.productname, s.quantity, s.totalamount
 FROM sales s
@@ -101,7 +100,7 @@ INNER JOIN products p ON s.productid = p.productid;
 ``` 
  **Inner Join Screenshot** <br> *"This INNER JOIN displays all completed sales with same customer & product details. It helps to see which customers bought products & how much money each sale generated."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/aee051da-7550-481a-8b73-38d56f738a47" /><br>
-#### Left Join SQL Command <br>
+### Left Join SQL Command 
 ```sql
 SELECT c.customerid, c.name, c.region
 FROM customer c
@@ -110,7 +109,7 @@ WHERE s.salesid IS NULL;
 ```
 **Left Join Screenshot** <br> *"This LEFT JOIN identifies customers who have never made any purchases. In this case, only Frank is inactive"* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/d5a78cd3-3ed5-4231-87af-19d828a25e87" /> <br>
-#### Right Join SQL Command <br>
+### Right Join SQL Command 
 ```sql
 SELECT p.productid, p.productname
 FROM sales s
@@ -119,16 +118,16 @@ WHERE s.salesid IS NULL;
 ```
 **Right Join Screenshot**<br>  *"This RIGHT JOIN finds products that have not been sold. In this case, only Tablet which is not sold."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/9b87b4a0-debc-4893-a509-89827f55b8f0" /> <br>
-#### Full Outer Join SQL Command <br>
+### Full Outer Join SQL Command 
 ```sql
 SELECT c.name, p.productname
 FROM customer c
 FULL OUTER JOIN products p
 ON c.customerid = p.productid;
 ```
-**Full Outer Join screenshot**<br>  *"This FULL OUTER JOIN compares customers and products, including unmatched records. It helps identify any customers or products without relationships."* <br>
+**Full Outer Join screenshot** <br>  *"This FULL OUTER JOIN compares customers and products, including unmatched records. It helps identify any customers or products without relationships."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/2ee1276e-7151-49e1-a468-d35b8ce7e801" /><br>
-#### Self Join Command <br>
+### Self Join Command 
 ```sql
 SELECT c1.name AS customer1, c2.name AS customer2, c1.region
 FROM customer c1
@@ -138,8 +137,8 @@ AND c1.customerid <> c2.customerid;
 ```
 **Self Join Screenshot**<br>  *"This SELF JOIN compares customers in the same region. It helps the business understand which customers are located in the same areas."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/c051ac73-bf52-4860-8cea-cc4966fa8ac9" /><br>
-### 2. Part B. Window Functions Implementation<br>
-#### Ranking Function Command <br>
+## Step 5: Part B. Window Functions Implementation
+### Ranking Function Command 
 ```sql
 SELECT p.productname, SUM(s.totalamount) AS total_sales,
     ROW_NUMBER() OVER (ORDER BY SUM(s.totalamount) DESC) AS row_num,
@@ -150,9 +149,9 @@ FROM sales s
 JOIN products p ON s.productid = p.productid
 GROUP BY p.productname;
 ```
-**Ranking Functions Screenshot**<br>  *"This query ranks products based on total revenue. It helps the business identify top-performing products and compare their relative performance"* <br>
+**Ranking Functions Screenshot** <br>  *"This query ranks products based on total revenue. It helps the business identify top-performing products and compare their relative performance"* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/ed242827-ae69-4661-8d12-8ea52007ef15" /><br>
-#### Aggregate Window Function Command <br>
+### Aggregate Window Function Command 
 ```sql
 SELECT salesdate, totalamount,
     SUM(totalamount) OVER (
@@ -173,18 +172,18 @@ SELECT salesdate, totalamount,
     ) AS maximum_sales
 FROM sales;
 ```
-**Aggregate Window Functions Screenshot**<br> *"This query tracks cumulative sales, average performance, and sales limits over time. It helps management understand growth patterns and identify low and high sales periods."* <br>
+**Aggregate Window Functions Screenshot** <br> *"This query tracks cumulative sales, average performance, and sales limits over time. It helps management understand growth patterns and identify low and high sales periods."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/16f3b2f6-ccc6-4afa-a3ef-70e797099f14" /><br>
-#### Navigation Function Command <br>
+### Navigation Function Command 
 ```sql
 SELECT salesdate, totalamount,
     LAG(totalamount) OVER (ORDER BY salesdate) AS previous_sales,
     totalamount - LAG(totalamount) OVER (ORDER BY salesdate) AS sales_change
 FROM sales;
 ```
-**Navigation Functions Screenshot**<br> *"This query compares current sales with previous sales. It helps identify increases or decreases in revenue between periods."* <br>
+**Navigation Functions Screenshot** <br> *"This query compares current sales with previous sales. It helps identify increases or decreases in revenue between periods."* <br>
 <img width="500" height="200" alt="Image" src="https://github.com/user-attachments/assets/012bfd33-3af3-4da7-aa30-8a830c8452bb" /><br>
-#### Distribution Function Command <br>
+### Distribution Function Command 
 ```sql
 SELECT c.name, SUM(s.totalamount) AS total_spent,
     NTILE(4) OVER (ORDER BY SUM(s.totalamount)) AS spending_quartile,
@@ -244,14 +243,14 @@ Product 5 sold the most likely because it is highly popular, while Customer 2 sp
 ### Prescriptive — What should be done next?
 To improve results, Product 5 should be restocked to meet demand, top customers like Customer 2 should be targeted with loyalty programs or discounts, and low-selling products or slow sales days should be addressed through promotions or better marketing.
 
-### Key Insights
+## Step 7: Key Insights
  - Product 5 is the most popular → stock management is crucial.<br>
  - Customer 2 is the top spender → target them for 0ffers & discounts.<br>
  - Some products have no sales and may need promotion or replacement.<br>
  - Monthly sales go up and down, showing times when marketing should be improved.<br>
  - Average sale amount = 399.05 → standard for planning pricing and offers.<br>
 
-## References 🤖
+## Step 8: References 🤖
 **Class Materials**<br>
 - DBMS notes by Temitope for join commands. <br>
 - Lecture notes. <br>
