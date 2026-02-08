@@ -45,9 +45,9 @@ The goal is to identify top-performing products, understand customer segments, a
 ## Step 3: Database Schema Design
 
 ### Tables with attributes 
-1. Customer (customerID, customerName, region) - stores information about customers 
-2. Products (productID, productName, price) - Stores the products that are being sold
-3. Sales (salesID, salesDate, quantity) - Records every sale transaction.
+1. **Customer** (customerID, customerName, region) - stores information about customers 
+2. **Products** (productID, productName, price) - Stores the products that are being sold
+3. **Sales** (salesID, salesDate, quantity) - Records every sale transaction.
 ###  Three (3) related tables with primary and foreign keys.
 - Create database
 ```sql
